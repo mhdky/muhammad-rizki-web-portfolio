@@ -3,16 +3,49 @@ const profil = document.querySelector('.profil');
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
-        navDesktop.classList.add('shadow-xl');
-        navDesktop.classList.add('shadow-black');
-        profil.classList.add('shadow-xl');
-        profil.classList.add('shadow-black');
+        navDesktop.classList.add('opacity-60');
+        navDesktop.classList.add('opacity-60');
+        profil.classList.add('opacity-60');
+        profil.classList.add('opacity-60');
+        
     } else {
-        navDesktop.classList.remove('shadow-xl');
-        navDesktop.classList.remove('shadow-black');
-        profil.classList.remove('shadow-xl');
-        profil.classList.remove('shadow-black');
+        navDesktop.classList.remove('opacity-60');
+        navDesktop.classList.remove('opacity-60');
+        profil.classList.remove('opacity-60');
+        profil.classList.remove('opacity-60');
     }
+});
+navDesktop.addEventListener('mouseenter', () => {
+    navDesktop.classList.add('shadow-xl');
+    navDesktop.classList.add('shadow-black');
+    profil.classList.add('shadow-xl');
+    profil.classList.add('shadow-black');
+    navDesktop.classList.add('opacity-100');
+    profil.classList.add('opacity-100');
+});
+navDesktop.addEventListener('mouseleave', () => {
+    navDesktop.classList.remove('shadow-xl');
+    navDesktop.classList.remove('shadow-black');
+    profil.classList.remove('shadow-xl');
+    profil.classList.remove('shadow-black');
+    navDesktop.classList.remove('opacity-100');
+    profil.classList.remove('opacity-100');
+});
+profil.addEventListener('mouseenter', () => {
+    navDesktop.classList.add('shadow-xl');
+    navDesktop.classList.add('shadow-black');
+    profil.classList.add('shadow-xl');
+    profil.classList.add('shadow-black');
+    navDesktop.classList.add('opacity-100');
+    profil.classList.add('opacity-100');
+});
+profil.addEventListener('mouseleave', () => {
+    navDesktop.classList.remove('shadow-xl');
+    navDesktop.classList.remove('shadow-black');
+    profil.classList.remove('shadow-xl');
+    profil.classList.remove('shadow-black');
+    navDesktop.classList.remove('opacity-100');
+    profil.classList.remove('opacity-100');
 });
 
 const cardPortfolio = document.querySelectorAll('.card-portfolio');
@@ -71,3 +104,7 @@ masihPengembanganDetail.addEventListener('click', () => {
         masihPengembanganDetail.style.display = 'none';
     }, "100");
 });
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById('copyright').innerHTML = year;
