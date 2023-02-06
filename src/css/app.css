@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply text-white-primary font-inter
+}
+
+body::-webkit-scrollbar-thumb, .detail-portfolio::-webkit-scrollbar-thumb, .web-name::-webkit-scrollbar-thumb, .gambar::-webkit-scrollbar-thumb {
+    @apply rounded-[10px] bg-black-nav
+}
+
+body::-webkit-scrollbar, .detail-portfolio::-webkit-scrollbar, .web-name::-webkit-scrollbar, .gambar::-webkit-scrollbar {
+    width: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.intro {
+    background: linear-gradient(91.5deg, #EB8B75 0.24%, #A21AA5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.flex-detail-portfolio {
+    @apply flex
+}
+
+.masih-pengembangan, .masih-pengembangan-detail {
+    animation: bottom-to-top 0.5s;
+}
+
+@keyframes bottom-to-top {
+    0% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.nav-mobile-hide {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-mobile-hide {
+        display: none;
+    }
+}
