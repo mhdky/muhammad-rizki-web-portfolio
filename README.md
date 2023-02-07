@@ -6,4 +6,4 @@ Web yang berisi mengenai:
  * **Portfolio/project yang saya kerjakan**
  * dan kontak yang dapat menghubungi saya
 
-![image.png]( [https://dewabiz.com/cara-deploy-laravel-ke-vps/](https://mhdky.github.io/muhammad-rizki-web-portfolio/public/img/muhammad-rizki-portfolio-detail.png) )
+![image.png]( https://dewabiz.com/cara-deploy-laravel-ke-vps/](https://mhdky.github.io/muhammad-rizki-web-portfolio/public/img/muhammad-rizki-portfolio-detail.png) )
